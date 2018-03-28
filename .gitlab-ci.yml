@@ -1,0 +1,12 @@
+image: boileaum/jupyter
+
+pages:
+  script:
+    - ./build.sh
+  tags:
+    - dind
+  only:
+    - master
+  artifacts:
+    paths:
+      - public
